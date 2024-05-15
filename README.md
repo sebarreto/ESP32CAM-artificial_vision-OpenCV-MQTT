@@ -32,5 +32,16 @@ For this project I decided to practice with Arduino IDE (C++). I took the exampl
 
 First, we run the Arduino code (image_detection.ino) from the Arduino IDE. This action will start the video server and show us the IP address on the screen.
 
-Second, we execute Python code ()
+Second, we run the Python code (image_recognition_mqtt.py). But first we need to modify the code to configure the IP address obtained in the previous step.
 
+Finally, you need to allocate 3 files in the same folder. coco.names (attached) and yolov3.cfg & yolov3.weights.. you can find they here: https://pjreddie.com/darknet/yolo/ 
+
+## Test
+
+![image captured person](https://i.ibb.co/Y0zNktt/pe1.png)
+
+![image captured bicicle](https://i.ibb.co/nRgyyHt/bi.png)
+
+Sending information via MQTT with people detection counting.
+
+![MQTT reported](https://i.ibb.co/G9L73KV/mqtt-people.png)
